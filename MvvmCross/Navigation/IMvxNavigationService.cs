@@ -291,8 +291,8 @@ namespace MvvmCross.Navigation
         /// <param name="result"></param>
         /// <param name="cancellationToken"></param>
         /// <returns></returns>
-        Task<bool> Close<TResult>(IMvxViewModelResult<TResult> viewModel, TResult? result, CancellationToken cancellationToken = default)
-            where TResult : class;
+        Task<bool> Close<TResult>(IMvxViewModelResult<TResult> viewModel, TResult result, CancellationToken cancellationToken = default)
+            where TResult : notnull;
 
         /// <summary>
         /// Dispatches a ChangePresentation with Hint

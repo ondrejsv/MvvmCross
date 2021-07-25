@@ -600,8 +600,8 @@ namespace MvvmCross.Navigation
         }
 
         public virtual async Task<bool> Close<TResult>(
-            IMvxViewModelResult<TResult> viewModel, TResult? result, CancellationToken cancellationToken = default)
-            where TResult : class
+            IMvxViewModelResult<TResult> viewModel, TResult result, CancellationToken cancellationToken = default)
+            where TResult : notnull
         {
             ValidateArguments(viewModel);
 
