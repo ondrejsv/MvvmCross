@@ -35,6 +35,15 @@ namespace Playground.Core.ViewModels
             get { return new MvxLanguageBinder("Playground.Core", "Text"); }
         }
 
+        private TestViewModel testViewModel = new TestViewModel();
+        public TestViewModel TestViewModel
+        {
+            get
+            {
+                return testViewModel;
+            }
+        }
+
         public RootViewModel(ILoggerFactory logProvider, IMvxNavigationService navigationService, IMvxViewModelLoader mvxViewModelLoader)
             : base(logProvider, navigationService)
         {

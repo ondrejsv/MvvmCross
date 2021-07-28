@@ -27,6 +27,7 @@ namespace Playground.Core
 
             Mvx.IoCProvider.RegisterSingleton<IMvxTextProvider>(new TextProviderBuilder().TextProvider);
 
+            //RegisterAppStart<TestViewModel>();
             RegisterAppStart<RootViewModel>();
         }
 
